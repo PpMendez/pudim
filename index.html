@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Pudim é gado?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.imgur.com/Fo2pPUI.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        
+        #question {
+            margin-top: 50px;
+            font-size: 36px;
+            color: black;
+        }
+        #buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 0 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        #no.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        #no {
+            position: fixed;
+            z-index: 999;
+            bottom: 20px;
+            right: 20px;
+        }
+        #boi {
+            display: none;
+            margin-top: 90px;
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="question">O Pudim é gado?</div>
+    <div id="buttons">
+    </center>
+        <button id="yes" onclick="showBoi()">Sim</button>
+        <button id="no" class="disabled" onclick="disableButton()">Não</button>
+    </div>
+    <center>
+    <img id="boi" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA0AMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABCEAABAwIEAwUGBAEKBwEAAAABAAIDBBEFEiExBkFREyJhcZEHFDJCUoEjobHBMxVDU3KCkrLR8PFEYmNzosLhFv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACURAAICAQQDAAEFAAAAAAAAAAABAhESAyFBURMUMQQiIzJCYf/aAAwDAQACEQMRAD8A7IJGHZwRgg7FUccl/wDdPtlDdna+a2aM7LZLGyrGzPto9H2khPxKQLJBVud5+YhJzOv8ZQDLS6K46qsu76yh3vqKBWWdx1CGYdQqzXr+aIuGxJ9UCss87fqCIyM+oKtaQdijOm/6oHZY9oz6gh2jPqCrjYGyBy/6KYsiw7Vn1BDtWfUFXXaN0WZiKHkWXbR9Qi7eLqVXhw5BKugLJpqIxzKL3qPqVD5JNtUbBZOFRH1KPtGfUFAuEMw6BMLLAPYfmCO4OxCrDIEBJbY2QFllZGq015j03RtxB79rDzTphZXGJzTodEoN6pd0YsfBPMeI7HcDTZL7VrT3im8pc3RyZNO+973KSim9wcmvgVbE6YdrRVJgqeRJOR1uTm/uq2LiB1PM2nxeE08h0D/ld5HYqyLSzcIyGSMySsa9h3a4XBUz0b3ixx1UtpISzFqNwJEht9tlVYrxbSUmVlM3tpXXNnHKGhRsag4Uw4D+UqqLDnP1AZUGMu8m3t+S5rWVlJNXzy0dRJJDntEZNy3lsuf9yLps3rSkrSOg/wD7x0P8fDw5v1Ry7+oTjeNRW/gUWHyNqn/wxM9oafusLFMHNacw7puPAJo1hieXiTK9mrbnfmrydbCwjZrJ5eL6q5ic+Np17tRGwD75lPwt3EtAWSYlW0xpj8TJZu0dbwyj91ixxTXObkEgbfXKRex80T8UqpyXVj81xYZdli56tmvj00dSoa+oxN7300QZRtJAmk3kI0OUdL81NOcarn3CPGLaIuoKyMmna85JG6lvXTmL6rfx1kFVE2SllbJG7ZzV16UnW5yakaYu5t3km55XROnI0y/dI7SQlb7mOw5meOZQBcNyQlRF7txoE4WB24UuSRSjYlkruqXnJ3KSYgNrpsl7T8KNmFNC3uIRNffe6juqog7K6SO56uCdEzW6jKR5p7C3HSbfC26SWyO5WQbOSNAliTu3O6h2Mb7K3xalIeWsSny62B1TBud1ST5ER217CfhKM1zQbtaVVONjolZjZSaWW7MSaN2lPR4lEXC9wqMO6oGQAaHVKgs0clXCACXAg8wVHxTtjhtQ/CnNfV9meyaSN/uqRs3W/knBN5+qN+BbHGOI8LqpK58tS+odVuJDjUXDnev6J
